@@ -1,1 +1,1 @@
-# EcoG2
+# EcoG2 hub
