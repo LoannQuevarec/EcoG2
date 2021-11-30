@@ -206,6 +206,8 @@ plotErrors(errR)
 dadaFs <- dada(derepFs, err=errF, multithread=TRUE)
 ````
 
+#On passe de OTU à ASV, les OTU sont importants quand on considère les erreurs de séquencages, mais lorsque l'on a retiré ces incertitude il faut considérer toutes les variations existantes, On par le donc d'ASV (ou alors d'unité écologique).
+
 
 ## Sample 1 - 7113 reads in 1979 unique sequences.
 ## Sample 2 - 5299 reads in 1639 unique sequences.
@@ -259,6 +261,8 @@ dadaRs <- dada(derepRs, err=errR, multithread=TRUE)
 ````{r}
 dadaFs[[1]]
 ````
+
+#R permet de faire des rangements complexe, comme des listes de listes. Ici 1 est une liste présente dans une autre liste.
 
 
 ## dada-class: object describing DADA2 denoising results
