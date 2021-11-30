@@ -3,4 +3,73 @@ title: "R Notebook"
 output: github_document
 ---
 
-Blablabla
+```{bash}
+sudo apt-get update -y
+sudo apt-get install -y libglpk-dev 
+sudo apt-get install -y liblzma-dev libbz2-dev
+```
+
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("BiocStyle")
+BiocManager::install("Rhtslib")
+```
+
+```{r}
+library("knitr")
+library("BiocStyle")
+.cran_packages <- c("ggplot2", "gridExtra", "devtools")
+install.packages(.cran_packages) 
+.bioc_packages <- c("dada2", "phyloseq", "DECIPHER", "phangorn")
+BiocManager::install(.bioc_packages)
+# Load packages into session, and print package version
+sapply(c(.cran_packages, .bioc_packages), require, character.only = TRUE)
+```
+
+```{bash}
+cd ~
+wget https://mothur.s3.us-east-2.amazonaws.com/wiki/miseqsopdata.zip
+unzip miseqsopdata.zip
+```
+
+
+
+````{r}
+set.seed(100)
+miseq_path <- "/home/rstudio/MiSeq_SOP"
+list.files(miseq_path)
+````
+
+
+````{r}
+fnFs <- sort(list.files(miseq_path, pattern = "_R1_001.fastq"))
+fnRs <- sort(list.files(miseq_path, pattern = "_R2_001.fastq"))
+sampleNames <- sapply(strsplit(fnFs, "_"), `[`, 1)
+fnFs <- file.path(miseq_path, fnFs)
+fnRs <- file.path(miseq_path, fnRs)
+#file.path permet d'adapter une fonction à tous les languages de programmation (unix/python/R etc.)
+````
+
+````{r}
+fnFs[1:3]
+## [1] "./MiSeq_SOP/F3D0_S188_L001_R1_001.fastq"   "./MiSeq_SOP/F3D1_S189_L001_R1_001.fastq"  
+## [3] "./MiSeq_SOP/F3D141_S207_L001_R1_001.fastq"
+fnRs[1:3]
+## [1] "./MiSeq_SOP/F3D0_S188_L001_R2_001.fastq"   "./MiSeq_SOP/F3D1_S189_L001_R2_001.fastq"  
+## [3] "./MiSeq_SOP/F3D141_S207_L001_R2_001.fastq"
+plotQualityProfile(fnFs[1:2])
+````
+
+````{r}
+plotQualityProfile(fnRs[1:2])
+````
+#Il faut filtrer la qualité de nos séquences en retirant la fin de nos séquences, mais attention à ne pas perdre le chevauchement de nos séquences.
+
+
+
+
+````{r}
+
+````
+
