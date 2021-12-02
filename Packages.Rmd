@@ -1,6 +1,6 @@
 ---
-title: "Packages"
-output: github
+title: "Packages_CC1"
+output: github_document
 ---
 
 ```{bash}
@@ -59,10 +59,3 @@ if(any(!.inst)){
   biocLite(.bioc_packages[!.inst])
 }
 ````
-
-
-````{r}
-.inst <- .bioc_packages %in% installed.packages()
-````
-
-
