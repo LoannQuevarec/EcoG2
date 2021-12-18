@@ -30,14 +30,14 @@ sapply(c(.cran_packages, .bioc_packages), require, character.only = TRUE)
 ```
 
 
-````{r}
+```{r}
 install.packages("gitcreds")
 library(gitcreds)
 gitcreds_set()
-````
+```
 
 
-````{r}
+```{r}
 .cran_packages <- c( "shiny","miniUI", "caret", "pls", "e1071", "ggplot2", "randomForest", "dplyr", "ggrepel", "nlme", "devtools",
                   "reshape2", "PMA", "structSSI", "ade4",
                   "ggnetwork", "intergraph", "scales")
@@ -58,4 +58,4 @@ if(any(!.inst)){
   source("http://bioconductor.org/biocLite.R")
   biocLite(.bioc_packages[!.inst])
 }
-````
+```
