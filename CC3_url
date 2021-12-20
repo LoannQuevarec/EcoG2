@@ -1,83 +1,136 @@
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072023/SRR9072023_1.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072023/SRR9072023_2.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072024/SRR9072024_1.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072024/SRR9072024_2.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072025/SRR9072025_1.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072025/SRR9072025_2.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072026/SRR9072026_1.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072026/SRR9072026_2.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072027/SRR9072027_1.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072027/SRR9072027_2.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072028/SRR9072028_1.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072028/SRR9072028_2.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072029/SRR9072029_1.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072029/SRR9072029_2.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072030/SRR9072030_1.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072030/SRR9072030_2.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072031/SRR9072031_1.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072031/SRR9072031_2.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072032/SRR9072032_1.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072032/SRR9072032_2.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072033/SRR9072033_1.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072033/SRR9072033_2.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072034/SRR9072034_1.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072034/SRR9072034_2.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072035/SRR9072035_1.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072035/SRR9072035_2.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072036/SRR9072036_1.fastq.gz
-ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072036/SRR9072036_2.fastq.gz
-ftp.sra.ebi.ac.uk/vol1/srr/SRR907/006/SRR9072036
-PRJNA542615	SAMN11660343	SRX5848065	SRR9072037	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072037/SRR9072037_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072037/SRR9072037_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/007/SRR9072037
-PRJNA542615	SAMN11660344	SRX5848064	SRR9072038	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072038/SRR9072038_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072038/SRR9072038_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/008/SRR9072038
-PRJNA542615	SAMN11660363	SRX5848063	SRR9072039	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072039/SRR9072039_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072039/SRR9072039_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/009/SRR9072039
-PRJNA542615	SAMN11660364	SRX5848062	SRR9072040	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072040/SRR9072040_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072040/SRR9072040_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/000/SRR9072040
-PRJNA542615	SAMN11660365	SRX5848061	SRR9072041	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072041/SRR9072041_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072041/SRR9072041_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/001/SRR9072041
-PRJNA542615	SAMN11660366	SRX5848060	SRR9072042	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072042/SRR9072042_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072042/SRR9072042_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/002/SRR9072042
-PRJNA542615	SAMN11660367	SRX5848059	SRR9072043	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072043/SRR9072043_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072043/SRR9072043_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/003/SRR9072043
-PRJNA542615	SAMN11660368	SRX5848058	SRR9072044	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072044/SRR9072044_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072044/SRR9072044_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/004/SRR9072044
-PRJNA542615	SAMN11660369	SRX5848057	SRR9072045	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072045/SRR9072045_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072045/SRR9072045_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/005/SRR9072045
-PRJNA542615	SAMN11660370	SRX5848056	SRR9072046	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072046/SRR9072046_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072046/SRR9072046_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/006/SRR9072046
-PRJNA542615	SAMN11660371	SRX5848055	SRR9072047	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072047/SRR9072047_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072047/SRR9072047_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/007/SRR9072047
-PRJNA542615	SAMN11660372	SRX5848054	SRR9072048	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072048/SRR9072048_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072048/SRR9072048_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/008/SRR9072048
-PRJNA542615	SAMN11660387	SRX5848053	SRR9072049	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072049/SRR9072049_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072049/SRR9072049_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/009/SRR9072049
-PRJNA542615	SAMN11660388	SRX5848052	SRR9072050	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072050/SRR9072050_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072050/SRR9072050_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/000/SRR9072050
-PRJNA542615	SAMN11660392	SRX5848051	SRR9072051	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072051/SRR9072051_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072051/SRR9072051_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/001/SRR9072051
-PRJNA542615	SAMN11660339	SRX5848050	SRR9072052	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072052/SRR9072052_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072052/SRR9072052_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/002/SRR9072052
-PRJNA542615	SAMN11660340	SRX5848049	SRR9072053	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072053/SRR9072053_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072053/SRR9072053_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/003/SRR9072053
-PRJNA542615	SAMN11660337	SRX5848048	SRR9072054	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072054/SRR9072054_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072054/SRR9072054_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/004/SRR9072054
-PRJNA542615	SAMN11660338	SRX5848047	SRR9072055	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072055/SRR9072055_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072055/SRR9072055_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/005/SRR9072055
-PRJNA542615	SAMN11660335	SRX5848046	SRR9072056	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072056/SRR9072056_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072056/SRR9072056_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/006/SRR9072056
-PRJNA542615	SAMN11660336	SRX5848045	SRR9072057	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072057/SRR9072057_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072057/SRR9072057_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/007/SRR9072057
-PRJNA542615	SAMN11660333	SRX5848044	SRR9072058	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072058/SRR9072058_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072058/SRR9072058_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/008/SRR9072058
-PRJNA542615	SAMN11660334	SRX5848043	SRR9072059	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072059/SRR9072059_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072059/SRR9072059_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/009/SRR9072059
-PRJNA542615	SAMN11660395	SRX5848042	SRR9072060	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072060/SRR9072060_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072060/SRR9072060_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/000/SRR9072060
-PRJNA542615	SAMN11660341	SRX5848041	SRR9072061	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072061/SRR9072061_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072061/SRR9072061_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/001/SRR9072061
-PRJNA542615	SAMN11660342	SRX5848040	SRR9072062	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072062/SRR9072062_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072062/SRR9072062_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/002/SRR9072062
-PRJNA542615	SAMN11660374	SRX5848039	SRR9072063	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072063/SRR9072063_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072063/SRR9072063_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/003/SRR9072063
-PRJNA542615	SAMN11660373	SRX5848038	SRR9072064	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072064/SRR9072064_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072064/SRR9072064_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/004/SRR9072064
-PRJNA542615	SAMN11660376	SRX5848037	SRR9072065	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072065/SRR9072065_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072065/SRR9072065_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/005/SRR9072065
-PRJNA542615	SAMN11660375	SRX5848036	SRR9072066	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072066/SRR9072066_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072066/SRR9072066_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/006/SRR9072066
-PRJNA542615	SAMN11660378	SRX5848035	SRR9072067	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072067/SRR9072067_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072067/SRR9072067_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/007/SRR9072067
-PRJNA542615	SAMN11660377	SRX5848034	SRR9072068	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072068/SRR9072068_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072068/SRR9072068_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/008/SRR9072068
-PRJNA542615	SAMN11660380	SRX5848033	SRR9072069	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072069/SRR9072069_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072069/SRR9072069_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/009/SRR9072069
-PRJNA542615	SAMN11660379	SRX5848032	SRR9072070	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072070/SRR9072070_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072070/SRR9072070_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/000/SRR9072070
-PRJNA542615	SAMN11660382	SRX5848031	SRR9072071	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072071/SRR9072071_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072071/SRR9072071_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/001/SRR9072071
-PRJNA542615	SAMN11660381	SRX5848030	SRR9072072	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072072/SRR9072072_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072072/SRR9072072_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/002/SRR9072072
-PRJNA542615	SAMN11660394	SRX5848029	SRR9072073	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072073/SRR9072073_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072073/SRR9072073_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/003/SRR9072073
-PRJNA542615	SAMN11660393	SRX5848028	SRR9072074	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072074/SRR9072074_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072074/SRR9072074_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/004/SRR9072074
-PRJNA542615	SAMN11660400	SRX5848027	SRR9072075	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072075/SRR9072075_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072075/SRR9072075_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/005/SRR9072075
-PRJNA542615	SAMN11660399	SRX5848026	SRR9072076	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072076/SRR9072076_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072076/SRR9072076_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/006/SRR9072076
-PRJNA542615	SAMN11660398	SRX5848025	SRR9072077	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072077/SRR9072077_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072077/SRR9072077_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/007/SRR9072077
-PRJNA542615	SAMN11660397	SRX5848024	SRR9072078	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072078/SRR9072078_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072078/SRR9072078_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/008/SRR9072078
-PRJNA542615	SAMN11660360	SRX5848023	SRR9072079	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072079/SRR9072079_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072079/SRR9072079_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/009/SRR9072079
-PRJNA542615	SAMN11660359	SRX5848022	SRR9072080	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072080/SRR9072080_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072080/SRR9072080_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/000/SRR9072080
-PRJNA542615	SAMN11660358	SRX5848021	SRR9072081	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072081/SRR9072081_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072081/SRR9072081_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/001/SRR9072081
-PRJNA542615	SAMN11660357	SRX5848020	SRR9072082	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072082/SRR9072082_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072082/SRR9072082_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/002/SRR9072082
-PRJNA542615	SAMN11660356	SRX5848019	SRR9072083	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072083/SRR9072083_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072083/SRR9072083_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/003/SRR9072083
-PRJNA542615	SAMN11660355	SRX5848018	SRR9072084	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072084/SRR9072084_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072084/SRR9072084_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/004/SRR9072084
-PRJNA542615	SAMN11660354	SRX5848017	SRR9072085	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072085/SRR9072085_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072085/SRR9072085_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/005/SRR9072085
-PRJNA542615	SAMN11660353	SRX5848016	SRR9072086	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072086/SRR9072086_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072086/SRR9072086_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/006/SRR9072086
-PRJNA542615	SAMN11660362	SRX5848015	SRR9072087	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072087/SRR9072087_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072087/SRR9072087_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/007/SRR9072087
-PRJNA542615	SAMN11660361	SRX5848014	SRR9072088	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072088/SRR9072088_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072088/SRR9072088_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/008/SRR9072088
-PRJNA542615	SAMN11660396	SRX5848013	SRR9072089	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072089/SRR9072089_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072089/SRR9072089_2.fastq.gz		ftp.sra.ebi.ac.uk/vol1/srr/SRR907/009/SRR9072089
-PRJNA542615	SAMN11660391	SRX5848012	SRR9072090	256318	metagenome	ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072090/SRR9072090_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072090/SRR9072090_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072023/SRR9072023_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072023/SRR9072023_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072024/SRR9072024_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072024/SRR9072024_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072025/SRR9072025_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072025/SRR9072025_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072026/SRR9072026_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072026/SRR9072026_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072027/SRR9072027_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072027/SRR9072027_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072028/SRR9072028_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072028/SRR9072028_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072029/SRR9072029_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072029/SRR9072029_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072030/SRR9072030_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072030/SRR9072030_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072031/SRR9072031_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072031/SRR9072031_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072032/SRR9072032_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072032/SRR9072032_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072033/SRR9072033_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072033/SRR9072033_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072034/SRR9072034_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072034/SRR9072034_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072035/SRR9072035_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072035/SRR9072035_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072036/SRR9072036_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072036/SRR9072036_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072037/SRR9072037_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072037/SRR9072037_2.fastq.gz		
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072038/SRR9072038_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072038/SRR9072038_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072039/SRR9072039_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072039/SRR9072039_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072040/SRR9072040_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072040/SRR9072040_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072041/SRR9072041_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072041/SRR9072041_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072042/SRR9072042_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072042/SRR9072042_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072043/SRR9072043_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072043/SRR9072043_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072044/SRR9072044_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072044/SRR9072044_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072045/SRR9072045_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072045/SRR9072045_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072046/SRR9072046_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072046/SRR9072046_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072047/SRR9072047_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072047/SRR9072047_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072048/SRR9072048_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072048/SRR9072048_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072049/SRR9072049_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072049/SRR9072049_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072050/SRR9072050_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072050/SRR9072050_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072051/SRR9072051_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072051/SRR9072051_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072052/SRR9072052_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072052/SRR9072052_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072053/SRR9072053_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072053/SRR9072053_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072054/SRR9072054_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072054/SRR9072054_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072055/SRR9072055_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072055/SRR9072055_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072056/SRR9072056_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072056/SRR9072056_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072057/SRR9072057_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072057/SRR9072057_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072058/SRR9072058_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072058/SRR9072058_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072059/SRR9072059_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072059/SRR9072059_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072060/SRR9072060_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072060/SRR9072060_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072061/SRR9072061_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072061/SRR9072061_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072062/SRR9072062_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072062/SRR9072062_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072063/SRR9072063_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072063/SRR9072063_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072064/SRR9072064_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072064/SRR9072064_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072065/SRR9072065_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072065/SRR9072065_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072066/SRR9072066_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072066/SRR9072066_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072067/SRR9072067_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072067/SRR9072067_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072068/SRR9072068_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072068/SRR9072068_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072069/SRR9072069_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072069/SRR9072069_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072070/SRR9072070_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072070/SRR9072070_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072071/SRR9072071_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072071/SRR9072071_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072072/SRR9072072_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072072/SRR9072072_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072073/SRR9072073_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072073/SRR9072073_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072074/SRR9072074_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072074/SRR9072074_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072075/SRR9072075_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072075/SRR9072075_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072076/SRR9072076_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072076/SRR9072076_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072077/SRR9072077_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072077/SRR9072077_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072078/SRR9072078_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072078/SRR9072078_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072079/SRR9072079_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072079/SRR9072079_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072080/SRR9072080_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072080/SRR9072080_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072081/SRR9072081_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/001/SRR9072081/SRR9072081_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072082/SRR9072082_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/002/SRR9072082/SRR9072082_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072083/SRR9072083_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/003/SRR9072083/SRR9072083_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072084/SRR9072084_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/004/SRR9072084/SRR9072084_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072085/SRR9072085_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/005/SRR9072085/SRR9072085_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072086/SRR9072086_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/006/SRR9072086/SRR9072086_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072087/SRR9072087_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/007/SRR9072087/SRR9072087_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072088/SRR9072088_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/008/SRR9072088/SRR9072088_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072089/SRR9072089_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/009/SRR9072089/SRR9072089_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072090/SRR9072090_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR907/000/SRR9072090/SRR9072090_2.fastq.gz
