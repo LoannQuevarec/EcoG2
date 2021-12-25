@@ -3,7 +3,7 @@ title: "R Notebook"
 output: github_document
 ---
 
-#Ce programme a été réalisé à partir du tutoriel suivant : https://bioconductor.org/help/course-materials/2017/BioC2017/Day1/Workshops/Microbiome/MicrobiomeWorkflowII.html
+#Methods
 
 ##Amplicon bioinformatics: from raw reads to tables
 
@@ -21,6 +21,7 @@ set.seed(100)
 miseq_path <- "/home/rstudio/MiSeq_SOP"
 list.files(miseq_path)
 ```
+
 
 ##Filter and Trim
 
@@ -56,12 +57,18 @@ if(!file_test("-d", filt_path)) dir.create(filt_path)
 filtFs <- file.path(filt_path, paste0(sampleNames, "_F_filt.fastq.gz"))
 filtRs <- file.path(filt_path, paste0(sampleNames, "_R_filt.fastq.gz"))
 ```
+
+
 ```{r}
 out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(240,160), maxN=0, maxEE=c(2,2), truncQ=2, rm.phix=TRUE, compress=TRUE, multithread=FALSE) # On Windows set multithread=FALSE
 head(out)
 ```
+
+
 ##Infer sequence variants
+
 ###Dereplication
+
 ```{r}
 derepFs <- derepFastq(filtFs, verbose=TRUE)
 derepRs <- derepFastq(filtRs, verbose=TRUE)
@@ -69,9 +76,13 @@ derepRs <- derepFastq(filtRs, verbose=TRUE)
 names(derepFs) <- sampleNames
 names(derepRs) <- sampleNames
 ```
+
+
 ```{r}
 errF <- learnErrors(filtFs, multithread=TRUE)
 ```
+
+
 ```{r}
 errR <- learnErrors(filtRs, multithread=TRUE)
 ```
@@ -79,16 +90,25 @@ errR <- learnErrors(filtRs, multithread=TRUE)
 plotErrors(errF)
 plotErrors(errR)
 ```
+
+
 ```{r}
 dadaFs <- dada(derepFs, err=errF, multithread=TRUE)
 ```
+
+
 ```{r}
 dadaRs <- dada(derepRs, err=errR, multithread=TRUE)
 ```
+
+
 ```{r}
 dadaFs[[1]]
 ```
+
+
 ##Construct sequence table and remove chimeras
+
 ```{r}
 mergers <- mergePairs(dadaFs, derepFs, dadaRs, derepRs)
 ```
@@ -96,25 +116,37 @@ mergers <- mergePairs(dadaFs, derepFs, dadaRs, derepRs)
 seqtabAll <- makeSequenceTable(mergers[!grepl("Mock", names(mergers))])
 table(nchar(getSequences(seqtabAll)))
 ```
+
+
 ```{bash}
 cd ~
 wget  https://zenodo.org/record/4587955/files/silva_nr99_v138.1_train_set.fa.gz
 ```
+
+
 ```{r}
 seqtabNoC <- removeBimeraDenovo(seqtabAll)
 ```
+
+
 ##Assign taxonomy
+
 ```{r}
 fastaRef <-"/home/rstudio/silva_nr99_v138.1_train_set.fa.gz"
 taxTab<-assignTaxonomy(seqtabNoC, refFasta=fastaRef, multithread=TRUE)
 unname(head(taxTab))
 ```
+
+
 ##Construct phylogenetic tree
+
 ```{r}
 seqs <- getSequences(seqtabNoC)
 names(seqs) <- seqs # This propagates to the tip labels of the tree
 alignment <- AlignSeqs(DNAStringSet(seqs), anchor=NA,verbose=FALSE)
 ```
+
+
 ```{r}
 phangAlign <- phyDat(as(alignment, "matrix"), type="DNA")
 dm <- dist.ml(phangAlign)
@@ -125,7 +157,10 @@ fitGTR <- optim.pml(fitGTR, model="GTR", optInv=TRUE, optGamma=TRUE,
         rearrangement = "stochastic", control = pml.control(trace = 0))
 detach("package:phangorn", unload=TRUE)
 ```
+
+
 ##Combine data into a phyloseq object
+
 ```{r}
 samdf <- read.csv("https://raw.githubusercontent.com/spholmes/F1000_workflow/master/data/MIMARKS_Data_combined.csv",header=TRUE)
 samdf$SampleID <- paste0(gsub("00", "", samdf$host_subject_id), "D", samdf$age-21)
@@ -133,6 +168,8 @@ samdf <- samdf[!duplicated(samdf$SampleID),] # Remove dupicate entries for rever
 rownames(seqtabAll) <- gsub("124", "125", rownames(seqtabAll)) # Fix discrepancy
 all(rownames(seqtabAll) %in% samdf$SampleID) # TRUE
 ```
+
+
 ```{r}
 rownames(samdf) <- samdf$SampleID
 keep.cols <- c("collection_date", "biome", "target_gene", "target_subfragment",
@@ -140,6 +177,8 @@ keep.cols <- c("collection_date", "biome", "target_gene", "target_subfragment",
 "diet", "family_relationship", "genotype", "SampleID") 
 samdf <- samdf[rownames(seqtabAll), keep.cols]
 ```
+
+
 ```{r}
 ps <- phyloseq(otu_table(seqtabNoC, taxa_are_rows=FALSE), 
                sample_data(samdf), 
@@ -147,21 +186,33 @@ ps <- phyloseq(otu_table(seqtabNoC, taxa_are_rows=FALSE),
 ps <- prune_samples(sample_names(ps) != "Mock", ps) # Remove mock sample
 ps
 ```
+
+
 #Using phyloseq
+
 ##Loading the data
+
 ```{r}
 ps_connect <-url("https://raw.githubusercontent.com/spholmes/F1000_workflow/master/data/ps.rds")
 ps = readRDS(ps_connect)
 ps
 ```
+
+
 ##Filtering
+
 ###Taxonomic Filtering
+
 ```{r}
 rank_names(ps)
 ```
+
+
 ```{r}
 ps <- subset_taxa(ps, !is.na(Phylum) & !Phylum %in% c("", "uncharacterized"))
 ```
+
+
 ```{r}
 # Compute prevalence of each feature, store as data.frame
 prevdf = apply(X = otu_table(ps),
@@ -172,9 +223,13 @@ prevdf = data.frame(Prevalence = prevdf,
                     TotalAbundance = taxa_sums(ps),
                     tax_table(ps))
 ```
+
+
 ```{r}
 plyr::ddply(prevdf, "Phylum", function(df1){cbind(mean(df1$Prevalence),sum(df1$Prevalence))})
 ```
+
+
 ```{r}
 # Define phyla to filter
 filterPhyla = c("Fusobacteria", "Deinococcus-Thermus")
@@ -182,7 +237,10 @@ filterPhyla = c("Fusobacteria", "Deinococcus-Thermus")
 ps1 = subset_taxa(ps, !Phylum %in% filterPhyla)
 ps1
 ```
+
+
 ###Prevalence Filtering
+
 ```{r}
 # Subset to the remaining phyla
 prevdf1 = subset(prevdf, Phylum %in% get_taxa_unique(ps1, "Phylum"))
@@ -192,28 +250,41 @@ ggplot(prevdf1, aes(TotalAbundance, Prevalence / nsamples(ps),color=Phylum)) +
   scale_x_log10() +  xlab("Total Abundance") + ylab("Prevalence [Frac. Samples]") +
   facet_wrap(~Phylum) + theme(legend.position="none")
 ```
+
+
 ```{r}
 # Define prevalence threshold as 5% of total samples
 prevalenceThreshold = 0.05 * nsamples(ps)
 prevalenceThreshold
 ```
+
+
 ```{r}
 # Execute prevalence filter, using `prune_taxa()` function
 keepTaxa = rownames(prevdf1)[(prevdf1$Prevalence >= prevalenceThreshold)]
 ps2 = prune_taxa(keepTaxa, ps)
 ```
+
+
 ##Agglomerate taxa
+
 ```{r}
 # How many genera would be present after filtering?
 length(get_taxa_unique(ps2, taxonomic.rank = "Genus"))
 ```
+
+
 ```{r}
 ps3 = tax_glom(ps2, "Genus", NArm = TRUE)
 ```
+
+
 ```{r}
 h1 = 0.4
 ps4 = tip_glom(ps2, h = h1)
 ```
+
+
 ```{r}
 multiPlotTitleTextSize = 15
 p2tree = plot_tree(ps2, method = "treeonly",
@@ -227,11 +298,16 @@ p4tree = plot_tree(ps4, method = "treeonly",
                    ladderize = "left", title = "By Height") +
   theme(plot.title = element_text(size = multiPlotTitleTextSize))
 ```
+
+
 ##Abundance value transformation
+
 ```{r}
 # group plots together
 grid.arrange(nrow = 1, p2tree, p3tree, p4tree)
 ```
+
+
 ```{r}
 plot_abundance = function(physeq,title = "",
                           Facet = "Order", Color = "Phylum"){
@@ -248,29 +324,43 @@ plot_abundance = function(physeq,title = "",
     theme(legend.position="none")
 }
 ```
+
+
 ```{r}
 # Transform to relative abundance. Save as new object.
 ps3ra = transform_sample_counts(ps3, function(x){x / sum(x)})
 ```
+
+
 ```{r}
 plotBefore = plot_abundance(ps3,"")
 plotAfter = plot_abundance(ps3ra,"")
 # Combine each plot into one graphic.
 grid.arrange(nrow = 2,  plotBefore, plotAfter)
 ```
+
+
 ##Subset by taxonomy
+
 ```{r}
 psOrd = subset_taxa(ps3ra, Order == "Lactobacillales")
 plot_abundance(psOrd, Facet = "Genus", Color = NULL)
 ```
+
+
 ###Preprocessing
+
 ```{r}
 qplot(sample_data(ps)$age, geom = "histogram",binwidth=20) + xlab("age")
 ```
+
+
 ```{r}
 qplot(log10(rowSums(otu_table(ps))),binwidth=0.2) +
   xlab("Logged counts-per-sample")
 ```
+
+
 ```{r}
 sample_data(ps)$age_binned <- cut(sample_data(ps)$age,
                           breaks = c(0, 100, 200, 400))
@@ -283,23 +373,34 @@ plot_ordination(pslog, out.wuf.log, color = "age_binned") +
   labs(col = "Binned Age") +
   coord_fixed(sqrt(evals[2] / evals[1]))
 ```
+
+
 ```{r}
 rel_abund <- t(apply(otu_table(ps), 1, function(x) x / sum(x)))
 qplot(rel_abund[, 12], geom = "histogram",binwidth=0.05) +
   xlab("Relative abundance")
 ```
+
+
 #Different Ordination Projections
+
 ```{r}
 outliers <- c("F5D165", "F6D165", "M3D175", "M4D175", "M5D175", "M6D175")
 ps <- prune_samples(!(sample_names(ps) %in% outliers), ps)
 ```
+
+
 ```{r}
 which(!rowSums(otu_table(ps)) > 1000)
 ```
+
+
 ```{r}
 ps <- prune_samples(rowSums(otu_table(ps)) > 1000, ps)
 pslog <- transform_sample_counts(ps, function(x) log(1 + x))
 ```
+
+
 ```{r}
 out.pcoa.log <- ordinate(pslog,  method = "MDS", distance = "bray")
 evals <- out.pcoa.log$values[,1]
@@ -308,6 +409,8 @@ plot_ordination(pslog, out.pcoa.log, color = "age_binned",
   labs(col = "Binned Age", shape = "Litter")+
   coord_fixed(sqrt(evals[2] / evals[1]))
 ```
+
+
 ```{r}
 out.dpcoa.log <- ordinate(pslog, method = "DPCoA")
 evals <- out.dpcoa.log$eig
@@ -320,6 +423,8 @@ plot_ordination(pslog, out.dpcoa.log, color = "age_binned", label= "SampleID",
 plot_ordination(pslog, out.dpcoa.log, type = "species", color = "Phylum") +
   coord_fixed(sqrt(evals[2] / evals[1]))
 ```
+
+
 ```{r}
 out.wuf.log <- ordinate(pslog, method = "PCoA", distance ="wunifrac")
 evals <- out.wuf.log$values$Eigenvalues
@@ -328,16 +433,24 @@ plot_ordination(pslog, out.wuf.log, color = "age_binned",
   coord_fixed(sqrt(evals[2] / evals[1])) +
   labs(col = "Binned Age", shape = "Litter")
 ```
+
+
 ##Why are the ordination plots so far from square?
+
 ###PCA on ranks
+
 ```{r}
 abund <- otu_table(pslog)
 abund_ranks <- t(apply(abund, 1, rank))
 ```
+
+
 ```{r}
 abund_ranks <- abund_ranks - 329
 abund_ranks[abund_ranks < 1] <- 1
 ```
+
+
 ```{r}
 library(dplyr)
 library(reshape2)
@@ -355,6 +468,8 @@ ggplot(abund_df %>%
   labs(x = "Abundance", y = "Thresholded rank") +
   scale_color_brewer(palette = "Set2")
 ```
+
+
 ```{r}
 library(ade4)
 ranks_pca <- dudi.pca(abund_ranks, scannf = F, nf = 3)
@@ -375,6 +490,8 @@ row_scores <- row_scores %>%
 col_scores <- col_scores %>%
   left_join(tax)
 ```
+
+
 ```{r}
 evals_prop <- 100 * (ranks_pca$eig / sum(ranks_pca$eig))
 ggplot() +
@@ -389,10 +506,15 @@ ggplot() +
   coord_fixed(sqrt(ranks_pca$eig[2] / ranks_pca$eig[1])) +
   theme(panel.border = element_rect(color = "#787878", fill = alpha("white", 0)))
 ```
+
+
 ###Canonical correspondence
+
 ```{r}
 ps_ccpna <- ordinate(pslog, "CCA", formula = pslog ~ age_binned + family_relationship)
 ```
+
+
 ```{r}
 library(ggrepel)
 ps_scores <- vegan::scores(ps_ccpna)
@@ -419,13 +541,19 @@ ggplot() +
   coord_fixed(sqrt(ps_ccpna$CCA$eig[2] / ps_ccpna$CCA$eig[1])*0.45   ) +
   theme(panel.border = element_rect(color = "#787878", fill = alpha("white", 0)))
 ```
+
+
 ```{r}
 qplot(sample_data(ps)$age, geom = "histogram",binwidth=20) + xlab("age")
 ```
+
+
 ```{r}
 qplot(log10(rowSums(otu_table(ps))),binwidth=0.2) +
   xlab("Logged counts-per-sample")
 ```
+
+
 ```{r}
 sample_data(ps)$age_binned <- cut(sample_data(ps)$age,
                           breaks = c(0, 100, 200, 400))
