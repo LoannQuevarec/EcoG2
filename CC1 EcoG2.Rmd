@@ -31,7 +31,6 @@ fnRs <- sort(list.files(miseq_path, pattern = "_R2_001.fastq"))
 sampleNames <- sapply(strsplit(fnFs, "_"), `[`, 1)
 fnFs <- file.path(miseq_path, fnFs)
 fnRs <- file.path(miseq_path, fnRs)
-#file.path permet d'adapter une fonction à tous les languages de programmation (unix/python/R etc.)
 ```
 
 
@@ -86,6 +85,8 @@ errF <- learnErrors(filtFs, multithread=TRUE)
 ```{r}
 errR <- learnErrors(filtRs, multithread=TRUE)
 ```
+
+
 ```{r}
 plotErrors(errF)
 plotErrors(errR)
@@ -112,6 +113,8 @@ dadaFs[[1]]
 ```{r}
 mergers <- mergePairs(dadaFs, derepFs, dadaRs, derepRs)
 ```
+
+
 ```{r}
 seqtabAll <- makeSequenceTable(mergers[!grepl("Mock", names(mergers))])
 table(nchar(getSequences(seqtabAll)))
@@ -150,7 +153,7 @@ alignment <- AlignSeqs(DNAStringSet(seqs), anchor=NA,verbose=FALSE)
 ```{r}
 phangAlign <- phyDat(as(alignment, "matrix"), type="DNA")
 dm <- dist.ml(phangAlign)
-treeNJ <- NJ(dm) # Note, tip order != sequence order
+treeNJ <- NJ(dm)
 fit = pml(treeNJ, data=phangAlign)
 fitGTR <- update(fit, k=4, inv=0.2)
 fitGTR <- optim.pml(fitGTR, model="GTR", optInv=TRUE, optGamma=TRUE,
@@ -419,6 +422,8 @@ plot_ordination(pslog, out.dpcoa.log, color = "age_binned", label= "SampleID",
   labs(col = "Binned Age", shape = "Litter")+
   coord_fixed(sqrt(evals[2] / evals[1]))
 ```
+
+
 ```{r}
 plot_ordination(pslog, out.dpcoa.log, type = "species", color = "Phylum") +
   coord_fixed(sqrt(evals[2] / evals[1]))
