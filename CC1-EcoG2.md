@@ -1,8 +1,7 @@
 R Notebook
 ================
 
-#Ce programme a été réalisé à partir du tutoriel suivant :
-<https://bioconductor.org/help/course-materials/2017/BioC2017/Day1/Workshops/Microbiome/MicrobiomeWorkflowII.html>
+#Methods
 
 ##Amplicon bioinformatics: from raw reads to tables
 
