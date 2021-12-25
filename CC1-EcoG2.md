@@ -166,7 +166,6 @@ fnRs <- sort(list.files(miseq_path, pattern = "_R2_001.fastq"))
 sampleNames <- sapply(strsplit(fnFs, "_"), `[`, 1)
 fnFs <- file.path(miseq_path, fnFs)
 fnRs <- file.path(miseq_path, fnRs)
-#file.path permet d'adapter une fonction à tous les languages de programmation (unix/python/R etc.)
 ```
 
 ``` r
@@ -3239,7 +3238,7 @@ alignment <- AlignSeqs(DNAStringSet(seqs), anchor=NA,verbose=FALSE)
 ``` r
 phangAlign <- phyDat(as(alignment, "matrix"), type="DNA")
 dm <- dist.ml(phangAlign)
-treeNJ <- NJ(dm) # Note, tip order != sequence order
+treeNJ <- NJ(dm)
 fit = pml(treeNJ, data=phangAlign)
 fitGTR <- update(fit, k=4, inv=0.2)
 fitGTR <- optim.pml(fitGTR, model="GTR", optInv=TRUE, optGamma=TRUE,
